@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+  
+    <div >
+      <img
+        id="bg-img"
+        src="https://lp-cms-production.imgix.net/features/2013/09/RS-shutterstock_535685914-f4184db8625d.jpg"
+        alt="City"
+      />
+    </div>
+
+    <div class="search-block">
+      <div class="form-content">
+        <form id="myForm" action="#" onsubmit="return false">
+          <input
+            type="text"
+            name="placeName"
+            placeholder="Enter city name"
+            class="bar-bar"
+          />
+          <button class="pressed">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1.5em"
+              width="1.5em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+
+        <div id="weather"><p>Weather in Zurich</p></div>
+        <div id="temp">
+          <p>12.3<span>&#8451;</span></p>
+        </div>
+        <div id="clouds">
+          <p id="images2" style="margin-bottom: 0">
+            <img
+              class=""
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />Broken Clouds
+          </p>
+        </div>
+        <div id="humidity">
+          <p style="margin-bottom: 0">Humidity : 44%</p>
+        </div>
+        <div id="windspeed"><p>Wind speed : 11.32 km/h</p></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
