@@ -6,7 +6,7 @@ WeatherApp is a user-friendly and intuitive weather application developed as the
 
 ## Live Demo
 
-Check out the live demo of WeatherApp [here](https://www.example.com/weather-app-demo).
+Check out the live demo of WeatherApp [here](https://xghayor.github.io/Harvard-finalProject/).
 
 ## Features
 
